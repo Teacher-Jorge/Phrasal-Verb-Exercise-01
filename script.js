@@ -5,15 +5,13 @@ const pan = document.getElementById('pan')
 let translate = document.getElementById('translate')
 
 putz.addEventListener('click', function() {
-    let audio = document.getElementById('audio')
-    audio.play()
+    translate.style.visibility = 'visible'
     let click1 = document.getElementById('click1')
     click1.play()
     let sentence = document.getElementById('sentence')
     sentence.innerText = 'putzing around.'
     putz.style.backgroundColor = 'lime'
     putz.style.color = 'green'
-    putz.disabled = 'true'
     put.disabled = 'true'
     pan.disabled = 'true'
 })
@@ -56,12 +54,14 @@ pan.addEventListener('click', function() {
 })
 
 translate.addEventListener('click', function() {
+    let audio = document.getElementById('audio')
+    audio.play()
     let click2 = document.getElementById('click2')
     click2.play()
     let sentence = document.getElementById('sentence')
     translate.innerText = 'Ela tá afim de não fazer nada.'
     setTimeout(() => {
-        translate.innerHTML = 'Translate'
+        translate.innerHTML = 'Translate and Listen'
     }, 2000);
 })
 

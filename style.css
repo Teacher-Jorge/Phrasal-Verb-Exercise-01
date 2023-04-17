@@ -77,4 +77,5 @@ span {
     font-size: 25px;
     background-color: white;
     font-family: 'racing sans one';
+    visibility: hidden;
 }
