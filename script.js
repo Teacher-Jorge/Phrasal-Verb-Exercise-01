@@ -14,6 +14,7 @@ putz.addEventListener('click', function() {
     putz.style.color = 'green'
     put.disabled = 'true'
     pan.disabled = 'true'
+    putz.disabled = 'true'
 })
 
 put.addEventListener('click', function() {
